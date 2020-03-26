@@ -27,7 +27,7 @@ public class ChartDataServices {
 		List<Integer> integersList=new ArrayList<>();
 		List<TaskDetailsBean> taskDetailsBeansList=taskDetailsBeanRepository.findByReleaseNameAndCategory(releaseName, category);
 		
-		
+		System.out.println("Testing");
 		
 		for(TaskDetailsBean taskDetailsBean:taskDetailsBeansList) {
 			if(!taskDetailsBean.getConfigCreateValidate().equalsIgnoreCase("nr")&&!taskDetailsBean.getConfigCreateValidate().equalsIgnoreCase("done"))
