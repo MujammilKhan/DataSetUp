@@ -28,6 +28,7 @@ public class ChartDataServices {
 		List<TaskDetailsBean> taskDetailsBeansList=taskDetailsBeanRepository.findByReleaseNameAndCategory(releaseName, category);
 		
 		System.out.println("Testing");
+		System.out.println("New branch Created");
 		
 		for(TaskDetailsBean taskDetailsBean:taskDetailsBeansList) {
 			if(!taskDetailsBean.getConfigCreateValidate().equalsIgnoreCase("nr")&&!taskDetailsBean.getConfigCreateValidate().equalsIgnoreCase("done"))
